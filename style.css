@@ -351,14 +351,76 @@ nav ul li a.active, nav ul li a:hover {
     font-size: 28px;
     font-weight: 700;
     color: #00f7ff;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
-.project-description {
-    font-size: 15px;
-    color: #dbe7f3;
+.project-section {
     margin-bottom: 25px;
-    line-height: 1.6;
+}
+
+.project-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #00f7ff;
+    margin-bottom: 10px;
+}
+
+.project-text {
+    font-size: 14px;
+    color: #dbe7f3;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: rgba(0, 247, 255, 0.1);
+    border: 1px solid rgba(0, 247, 255, 0.4);
+    color: #00f7ff;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background-color: rgba(0, 247, 255, 0.2);
+    border-color: rgba(0, 247, 255, 0.7);
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    font-size: 14px;
+    color: #dbe7f3;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.features-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00f7ff;
+    font-weight: 700;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
 }
 
 .project-btn {
@@ -382,6 +444,18 @@ nav ul li a.active, nav ul li a:hover {
         0 0 60px rgba(0, 153, 255, 0.7);
 }
 
+.project-btn-secondary {
+    background: transparent;
+    border: 2px solid rgba(0, 247, 255, 0.5);
+    color: #00f7ff;
+    box-shadow: none;
+}
+
+.project-btn-secondary:hover {
+    border-color: #00f7ff;
+    background: rgba(0, 247, 255, 0.1);
+}
+
 .project-item iframe {
     border: 1px solid rgba(0, 247, 255, 0.2);
     border-radius: 10px;
@@ -395,6 +469,15 @@ nav ul li a.active, nav ul li a:hover {
 
     .project-item {
         padding: 20px;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-btn {
+        width: 100%;
+        text-align: center;
     }
 
     .project-item iframe {
